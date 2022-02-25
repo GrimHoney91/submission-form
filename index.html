@@ -20,40 +20,40 @@
                 <br>
                 You <em>know</em> you want to.
             </p>
-            <form action="">
+            <form id="form" action="">
                 <h2>Let's do this!</h2>
                 <div class="form-row">
                     <p class="container">
                         <label for="first-name">FIRST NAME</label>
-                        <input type="text" name="first-name" id="first-name">
+                        <input type="text" name="first-name" id="first-name" placeholder=" " required>
                     </p>
                     <p class="container">
                         <label for="last-name">LAST NAME</label>
-                        <input type="text" name="last-name" id="last-name">
+                        <input type="text" name="last-name" id="last-name" placeholder=" " required>
                     </p>
                 </div>
                 <div class="form-row">
                     <p class="container">
                         <label for="email">EMAIL</label>
-                        <input type="email" name="email" id="email">
+                        <input type="email" name="email" id="email" placeholder=" " required>
                     </p>
                     <p class="container">
                         <label for="phone-number">PHONE NUMBER</label>
-                        <input type="tel" name="phone-number" id="phone-number">
+                        <input type="tel" name="phone-number" id="phone-number" placeholder=" " required>
                     </p>
                 </div>
                 <div class="form-row">
                     <p class="container">
                         <label for="password">PASSWORD</label>
-                        <input type="password" name="password" id="password">
+                        <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" name="password" id="password" placeholder=" " required>
                     </p>
                     <p class="container">
                         <label for="confirm-password">CONFIRM PASSWORD</label>
-                        <input type="password" name="confirm-password" id="confirm-password">
+                        <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" name="confirm-password" id="confirm-password" placeholder=" " required>
                     </p>
                 </div>
             </form>
-            <button type="button">Create Account</button>
+            <button type="submit" form="form">Create Account</button>
             <p class="end-content">Already have an account? <a class="link" href="#">Log in</a></p>
         </div>
     </main>
